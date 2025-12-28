@@ -139,11 +139,16 @@ module.exports = ({ analyze, env, dest = "dist" } = {}) => ({
     output: {
         path: path.resolve(__dirname, "../", dest),
         filename: "[name].[chunkhash].js",
-        publicPath: process.env.GH_BUILD ? "" : "/",
+        publicPath: "./", // Use relative paths for Electron file:// loading
     },
     plugins: getPluginsByEnv(env, dest, analyze),
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
+        alias: {
+            // Force single React instance - prevents "Cannot read properties of null (reading 'useContext')" error
+            react: path.resolve(__dirname, "../", "node_modules/react"),
+            "react-dom": path.resolve(__dirname, "../", "node_modules/react-dom"),
+        },
     },
     stats: analyze ? "none" : stats,
 });

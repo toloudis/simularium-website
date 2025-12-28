@@ -14,11 +14,12 @@ const Env = require("./constants").Env;
 
 const getBasePlugins = (dist, env) => {
     return [
-        new ForkTsCheckerWebpackPlugin({
-            typescript: {
-                configFile: path.resolve(__dirname, "../", "tsconfig.json"),
-            },
-        }),
+        // Disabled for BioPRISM build - type checking causes errors with react-router versions
+        // new ForkTsCheckerWebpackPlugin({
+        //     typescript: {
+        //         configFile: path.resolve(__dirname, "../", "tsconfig.json"),
+        //     },
+        // }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: "style.[contenthash].css",
@@ -58,7 +59,7 @@ const getBasePlugins = (dist, env) => {
                 require("../package.json").version
             ),
             SIMULARIUM_VIEWER_VERSION: JSON.stringify(
-                require("../node_modules/@aics/simularium-viewer/package.json")
+                require("../../simularium-viewer/package.json")
                     .version
             ),
             SIMULARIUM_BUILD_ENVIRONMENT: JSON.stringify(env),

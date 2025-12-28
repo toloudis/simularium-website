@@ -6,7 +6,7 @@ import React, { useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import { Provider, useDispatch, batch } from "react-redux";
 import { Layout } from "antd";
-import { BrowserRouter, Switch, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, HashRouter, Switch, Route, useLocation } from "react-router-dom";
 import routes, { EMBED_PATHNAME, VIEWER_PATHNAME } from "./routes";
 import ScrollToTop from "./components/ScrollToTop";
 import AppHeader from "./containers/AppHeader";
@@ -107,15 +107,16 @@ const App = () => {
      *
      */
 
+    // Detect if running in Electron via file:// protocol
+    const isElectron = window.location.protocol === "file:";
+    const Router = isElectron ? HashRouter : BrowserRouter;
+    const basename = isElectron ? "" : (process.env.GH_BUILD ? "/simularium-website/" : "");
+
     return (
         <Provider store={store}>
             <StyleProvider>
                 <Layout>
-                    <BrowserRouter
-                        basename={
-                            process.env.GH_BUILD ? "/simularium-website/" : ""
-                        }
-                    >
+                    <Router basename={basename}>
                         <ScrollToTop />
                         {location.pathname !== EMBED_PATHNAME && (
                             <Header>
@@ -123,7 +124,7 @@ const App = () => {
                             </Header>
                         )}
                         <RouterSwitch />
-                    </BrowserRouter>
+                    </Router>
                 </Layout>
             </StyleProvider>
         </Provider>

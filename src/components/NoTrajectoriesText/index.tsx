@@ -8,7 +8,7 @@ import TRAJECTORIES from "../../constants/networked-trajectories";
 import { TrajectoryDisplayData } from "../../constants/interfaces";
 import { TUTORIAL_PATHNAME } from "../../routes";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface NoTrajectoriesTextProps {
     selectFile: ActionCreator<RequestNetworkFileAction>;

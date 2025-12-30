@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FORUM_BUG_REPORT_URL, ISSUE_URL } from "../../constants";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 const NetworkFileFailedText = (): JSX.Element => {
     return (

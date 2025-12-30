@@ -31,7 +31,7 @@ import ShareTrajectoryButton from "../../components/ShareTrajectoryButton";
 import DownloadTrajectoryMenu from "../../components/DownloadTrajectoryMenu";
 import { CustomButton } from "../../components/CustomButton";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface AppHeaderProps {
     simulariumFile: LocalSimFile | NetworkedSimFile;

@@ -14,7 +14,7 @@ import { Pause, Play } from "../Icons";
 import ViewportButton from "../ViewportButton";
 import CameraHomeButton from "../CameraControls/CameraHomeButton";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface PlayBackProps {
     playHandler: (timeOverride?: number) => void;

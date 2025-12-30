@@ -6,7 +6,7 @@ import ConversionCancelModal from "../ConversionCancelModal";
 import { CustomButton } from "../CustomButton";
 import { UpRightArrow, GoBack } from "../Icons";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface ConversionProcessingOverlayProps {
     fileName: string | null;

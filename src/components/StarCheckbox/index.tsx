@@ -7,7 +7,7 @@ import { TOOLTIP_DELAY, TOOLTIP_COLOR } from "../../constants";
 import { IconGlyphs } from "../../constants/interfaces";
 import { getIconGlyphClasses } from "../../util";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 const StarCheckbox = ({
     checked,

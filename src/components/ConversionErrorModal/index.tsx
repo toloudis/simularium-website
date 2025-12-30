@@ -6,7 +6,7 @@ import { CustomButton } from "../CustomButton";
 import CustomModal from "../CustomModal";
 import { Exclamation } from "../Icons";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface ConversionErrorModalProps {
     closeModal: () => void;

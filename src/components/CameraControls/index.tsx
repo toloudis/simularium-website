@@ -6,7 +6,7 @@ import { getIconGlyphClasses } from "../../util";
 import { ZoomIn, ZoomOut } from "../Icons";
 import ViewportButton from "../ViewportButton";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 import { CameraControlsDisplay } from "../../containers/ViewerPanel/types";
 import CameraHomeButton from "./CameraHomeButton";
 

@@ -33,7 +33,7 @@ import { CustomButton } from "../../components/CustomButton";
 import ConversionErrorModal from "../../components/ConversionErrorModal";
 import customRequest from "./custom-request";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface ConversionProps {
     setConversionEngine: ActionCreator<SetConversionEngineAction>;

@@ -4,7 +4,7 @@ import classNames from "classnames";
 import RecordMoviesModal from "../RecordMoviesModal";
 import ViewportButton from "../ViewportButton";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 import { useFormattedDuration } from "./useFormattedDuration";
 
 interface RecordMovieComponentProps {

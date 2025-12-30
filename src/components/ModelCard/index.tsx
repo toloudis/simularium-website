@@ -6,7 +6,7 @@ import { URL_PARAM_KEY_FILE_NAME } from "../../constants";
 import { TrajectoryDisplayData } from "../../constants/interfaces";
 import { VIEWER_PATHNAME } from "../../routes";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface ModelCardProps {
     trajectory: TrajectoryDisplayData;

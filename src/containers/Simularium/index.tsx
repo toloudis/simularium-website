@@ -54,7 +54,7 @@ import ConversionForm from "../ConversionForm";
 
 const { Content } = Layout;
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 import classNames from "classnames";
 import { EMBED_PATHNAME } from "../../routes";
 import EmbedOverlay from "../../components/EmbedOverlay";

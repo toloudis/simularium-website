@@ -18,7 +18,7 @@ import { HorizontalFlexbox, VerticalFlexbox } from "../FlexboxUtility";
 import { CustomButton } from "../CustomButton";
 import EmbedSnippetPanel from "./EmbedSnippetPanel";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface ShareTrajectoryModalProps {
     trajectoryIsShareable: boolean;

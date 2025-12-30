@@ -10,7 +10,7 @@ import { ButtonClass, DropdownState } from "../../constants/interfaces";
 import { DROPDOWN_HOVER_DELAY } from "../../constants";
 import { CustomButton } from "../CustomButton";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface CustomDropdownProps {
     items: MenuProps["items"];

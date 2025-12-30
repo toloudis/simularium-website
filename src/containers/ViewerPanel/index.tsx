@@ -74,7 +74,7 @@ import {
     CameraControlsDisplay,
 } from "./types";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface ViewerPanelProps {
     time: number;

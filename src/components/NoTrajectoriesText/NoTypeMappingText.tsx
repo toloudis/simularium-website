@@ -3,7 +3,7 @@ import * as React from "react";
 import { TUTORIAL_PATHNAME } from "../../routes";
 import { DOWNLOAD_URL } from "../../constants";
 
-import styles from "../NoTrajectoriesText/style.css";
+import styles from "../NoTrajectoriesText/style.module.css";
 
 const NoTypeMappingText = (): JSX.Element => {
     return (

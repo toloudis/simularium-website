@@ -3,7 +3,7 @@ import { Button, ButtonProps, Tooltip, TooltipProps } from "antd";
 import classNames from "classnames";
 
 import { TOOLTIP_COLOR } from "../../constants";
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface ViewportButtonProps extends ButtonProps {
     tooltipText?: string;

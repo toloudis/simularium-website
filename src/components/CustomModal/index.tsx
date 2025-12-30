@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { IconGlyphs } from "../../constants/interfaces";
 import { getIconGlyphClasses } from "../../util";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 type OmittedProps =
     | "onCancel"

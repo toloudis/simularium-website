@@ -4,7 +4,7 @@ import CustomModal from "../CustomModal";
 import { ButtonClass } from "../../constants/interfaces";
 import { CustomButton } from "../CustomButton";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface VersionModalProps {
     setModalVisible: (isModalVisible: boolean) => void;

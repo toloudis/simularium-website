@@ -7,7 +7,7 @@ import { formatFloatForDisplay } from "../../util";
 import { FilledCaret } from "../Icons";
 import { AgentDisplayNode } from "../AgentTree";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface MetadataPanelProps {
     selectedAgentMetadata: AgentMetadata;

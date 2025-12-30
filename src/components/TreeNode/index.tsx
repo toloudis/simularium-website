@@ -12,7 +12,7 @@ interface TreeNodeProps extends React.PropsWithChildren<any> {
     headerContent: ReactNode;
     expandByDefault?: boolean;
 }
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 const TreeNode = ({
     children,

@@ -10,7 +10,7 @@ import { ColorChange } from "../../constants/interfaces";
 import { COLORPICKER_POPOVER_OFFSET } from "../../constants";
 import { SetRecentColorsAction } from "../../state/selection/types";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface ColorPickerProps {
     childrenHaveDifferentColors?: boolean;

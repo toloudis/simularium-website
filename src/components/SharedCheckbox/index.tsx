@@ -6,7 +6,7 @@ import Checkbox from "../Checkbox";
 import { CHECKBOX_TYPE_STAR } from "../../constants";
 import { isUndefined } from "lodash";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 import { CHECK_ALL_BUTTON_TITLE } from "../AgentTree";
 
 interface SharedCheckboxProps {

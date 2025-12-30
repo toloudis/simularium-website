@@ -5,7 +5,7 @@ import { AgentMetadata } from "../../constants/interfaces";
 import MetadataPanel from "../MetadataPanel";
 import { AgentDisplayNode } from "../AgentTree";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 interface SideBarContentsProps {
     mainTitle: string;
     content: (JSX.Element | null)[];

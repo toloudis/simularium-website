@@ -10,7 +10,7 @@ import { VIEWER_PATHNAME } from "../../routes";
 import { CustomButton } from "../CustomButton";
 import { Drag } from "../Icons";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface FileUploadProps {
     fileList: RcFile[];

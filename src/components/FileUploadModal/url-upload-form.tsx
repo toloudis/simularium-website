@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 import { TUTORIAL_PATHNAME, VIEWER_PATHNAME } from "../../routes";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 type UrlFormValues = { url: string };
 interface UrlUploadProps {

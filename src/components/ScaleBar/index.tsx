@@ -1,7 +1,7 @@
 import * as React from "react";
 import ScaleBarImage from "../../assets/scale-bar.svg";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface ScaleBarProps {
     label: string;

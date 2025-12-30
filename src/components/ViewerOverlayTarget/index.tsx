@@ -17,7 +17,7 @@ import { SetViewerStatusAction } from "../../state/viewer/types";
 
 const { Dragger } = Upload;
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface ViewerOverlayTargetProps {
     clearSimulariumFile: ActionCreator<ClearSimFileDataAction>;

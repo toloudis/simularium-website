@@ -19,7 +19,7 @@ import { CHECKBOX_TYPE_STAR } from "../../constants";
 import ColorPicker from "../ColorPicker";
 import NoTypeMappingText from "../NoTrajectoriesText/NoTypeMappingText";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 const { Text } = Typography;
 

@@ -9,7 +9,7 @@ import { DownArrow, UpArrow } from "../Icons";
 import { VerticalFlexbox, HorizontalFlexbox } from "../FlexboxUtility";
 import { CustomButton } from "../CustomButton";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 const DEFAULT_WIDTH = 834;
 const DEFAULT_HEIGHT = 480;

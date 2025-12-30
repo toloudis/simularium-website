@@ -11,12 +11,12 @@ import BlankCard from "../BlankCard";
 import Footer from "../Footer";
 import { TUTORIAL_PATHNAME } from "../../routes";
 import { CYTOSIM_URL, READDY_URL } from "../../constants";
-const markdown = require("../../../ACKNOWLEDGMENTS.md");
-import styles from "./style.css";
+import markdown from "../../../ACKNOWLEDGMENTS.md";
+import styles from "./style.module.css";
 const { Content } = Layout;
 const NUM_CARDS_PER_ROW = 3;
 // Add bullets to each heading
-const markdownProcessed = markdown.default.replaceAll("##", "## &bull;");
+const markdownProcessed = markdown.replaceAll("##", "## &bull;");
 
 const LandingPage = (): JSX.Element => {
     return (

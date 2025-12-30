@@ -6,7 +6,7 @@ import moment from "moment";
 import { VIEWER_PATHNAME } from "../../routes";
 import TRAJECTORIES from "../../constants/networked-trajectories";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 import { URL_PARAM_KEY_FILE_NAME } from "../../constants";
 
 interface ViewerTitleProps {

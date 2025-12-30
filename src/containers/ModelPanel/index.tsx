@@ -51,7 +51,7 @@ import {
     getUiDisplayDataTree,
 } from "./selectors";
 
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 interface ModelPanelProps {
     uiDisplayDataTree: AgentDisplayNode[];

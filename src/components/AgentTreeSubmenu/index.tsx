@@ -13,7 +13,7 @@ interface AgentTreeSubmenuProps {
     onChange: (values: string[]) => void;
     checkboxType?: CHECKBOX_TYPE_STAR;
 }
-import styles from "./style.css";
+import styles from "./style.module.css";
 
 const AgentTreeSubmenu = ({
     checkedAgents,
